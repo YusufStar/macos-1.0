@@ -5,7 +5,7 @@ import {
   SwitchIcon,
   WifiIcon,
 } from "@/icons/icons";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 const Navbar: React.FC = () => {
@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target as HTMLElement;
 
-      if (!target.className?.includes("menu")) {
+      if (target instanceof HTMLElement && !target.classList.contains("menu")) {
         setOpen(false);
         setActiveMenuPath([]);
       }
@@ -148,7 +148,7 @@ const Navbar: React.FC = () => {
             open ? "bg-white/20" : "bg-white/0 hover:bg-white/10"
           }`}
         >
-          <AppleMiniLogo />
+          <AppleMiniLogo onClick={(e) => e.stopPropagation()}/>
 
           <AnimatePresence>
             {open && (

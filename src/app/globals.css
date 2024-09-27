@@ -2,26 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --system-red: #ff3b30;
+    --system-pink: #ff2d55;
+    --system-orange: #ff9500;
+    --system-gray-01: #8e8e93;
+    --system-yellow: #ffcc00;
+    --system-gray-02: #aeaeb2;
+    --system-gray-03: #c7c7cc;
+    --system-gray-04: #d1d1d6;
+    --system-gray-05: #e5e5ea;
+    --system-gray-06: #f2f2f7;
+    --system-green: #34c759;
+    --system-teal: #5ac8fa;
+    --system-blue: #007aff;
+    --system-indigo: #5856d6;
+    --system-purple: #af52de;
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .dark {
+    --system-red: #ff453a;
+    --system-pink: #ff2d55;
+    --system-orange: #ff9f0a;
+    --system-gray-01: #8e8e93;
+    --system-yellow: #ffd60a;
+    --system-gray-02: #636366;
+    --system-gray-03: #48484a;
+    --system-gray-04: #3a3a3c;
+    --system-gray-05: #2c2c2e;
+    --system-gray-06: #1c1c1e;
+    --system-green: #32d74b;
+    --system-teal: #64d2ff;
+    --system-blue: #0a84ff;
+    --system-indigo: #5e5ce6;
+    --system-purple: #bf5af2;
   }
 }

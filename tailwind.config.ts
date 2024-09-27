@@ -9,8 +9,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        systemRed: "var(--system-red)",
+        systemPink: "var(--system-pink)",
+        systemOrange: "var(--system-orange)",
+        systemGray01: "var(--system-gray-01)",
+        systemYellow: "var(--system-yellow)",
+        systemGray02: "var(--system-gray-02)",
+        systemGray03: "var(--system-gray-03)",
+        systemGray04: "var(--system-gray-04)",
+        systemGray05: "var(--system-gray-05)",
+        systemGray06: "var(--system-gray-06)",
+        systemGreen: "var(--system-green)",
+        systemTeal: "var(--system-teal)",
+        systemBlue: "var(--system-blue)",
+        systemIndigo: "var(--system-indigo)",
+        systemPurple: "var(--system-purple)",
       },
     },
   },
